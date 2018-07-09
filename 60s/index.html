@@ -1,0 +1,58 @@
+<!--60s on-line game prototype created by Lige Marshall Jr. III 7/2/18-->
+<!--60s On-line Basketball game HTML-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>60 Seconds</title>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!--style sheets-->
+<link rel="stylesheet" type="text/css" href="css/60s.css" />
+
+<!--Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+
+<!--Link to external js component file-->
+<script src='https://rawgit.com/cvcodes/fadf035abf6d65c3748ff469a62bdecf/raw/8e0f250d1a784cfe2718b643c5f4916c51cde0e6/images.js'>
+</script>
+
+</head>
+
+<body>
+<h1 id="bannerName">60 Seconds </h1>
+<p id="subtitle">by: Lige Marshall Jr. III</p>
+
+<div id="controller">
+<br>
+<div id="button_align">
+<button onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')">
+U</button>
+<br><br>
+<button id="left_btn" onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')">
+L</button>
+
+<button id="start_button"onclick="startGame()">START</button>
+
+<button onmousedown="move('right')" onmouseup="clearmove()" ontouchstart="move('right')">
+R</button>
+<br><br>
+<button onmousedown="move('down')" onmouseup="clearmove()" ontouchstart="move('down')">
+D</button>
+</div>
+<!--end controller-->
+</div>
+
+<div id="reset_button">
+<button onclick="resetPage()">RESET</button>
+</div>
+
+<!--javascript-->
+<script src="js/60s.js"></script>
+
+</body>
+</html>
